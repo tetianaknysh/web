@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(99, 155, 61, 0.596),
+      rgba(29, 201, 81, 0.5)
+    ),
+    url(7bc35e2b95500cb04e641ae91fc16d9e.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+	background-color: rgba(22, 94, 35, 0.904);
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+    max-width: 100%;
+    color: white;
+}
+
+.header {
+	border-bottom: 1px solid rgba(18, 68, 27, 0.904);
+	background-color: rgba(25, 70, 33, 0.904);
+	padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+    text-align: center;
+    color: rgb(230, 234, 238);
+
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid rgb(207, 188, 188);
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #00ff2a;
+}
+
+.form-control.error input {
+	border-color: #ff0000;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+	background-color: #250a99;
+	border: 2px solid #10126e;
+	border-radius: 4px;
+	color: rgb(207, 188, 188);
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
